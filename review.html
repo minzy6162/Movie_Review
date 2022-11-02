@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body
+      {
+        margin: 1% 10% ;
+        border: 0px solid black;
+      }
+	@font-face {
+		font-family: 'Recipekorea';
+		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	a, a:link {
+		color: #000;
+		text-decoration: none;
+		text-decoration-line: none;
+		font-family: 'Recipekorea';
+	}
+	ul {
+		list-style: none;
+		border-bottom: 1px solid #333;
+		display: flex;
+		justify-content: center;
+	}
+	ul li a {
+		display: block;
+		padding: 1.5vw 2vw 1vw;
+		position: relative;
+		font-size: 2.5vw;
+		text-decoration-line: none;
+	}
+	ul li a::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+	}
+	.menubar li a::after {
+		width: 0;
+		height: 100%;
+		background: #01143c;
+		left: 50%;
+	}
+	ul li a:hover::after {
+		width: 100%;
+		left: 0;
+		transition: all .3s;
+	}
+	.menubar li a:hover{
+  		color: #fff;
+	}
+	img{
+		display: block;
+		margin: auto;
+		width: 25%;
+		height: 100%;
+        float: left;
+	}
+
+    button{
+      border: 1px solid;
+      padding: 10px;
+      width: 100%;
+      height: 5%; 
+      background-color: white; 
+    }
+
+    h3{
+        padding-top: 10%;
+        text-align: center;
+    }
+    </style>
+
+  </head>
+  <body>
+	<div>
+		<nav class = "menubar">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="movie.html">MOVIE</a></li>
+			<li><a href="review.html">REVIEW</a></li>
+			<li><a href="ranking.html">RANKING</a></li>
+		</ul>
+		</nav>
+	</div>
+    
+    <button onclick="window.location.href='review1.html'">
+        <img src="img/엔칸토.jpeg">
+        <h3>엔칸토: 마법의 세계</h3>
+        애니메이션 | 미국, 콜롬비아 | 109분<br>
+        2021.11.24 개봉<br>
+        63만명 관람
+    </button>
+
+    <button onclick="window.location.href='review2.html'">
+        <img src="img/씽2게더.jpeg">
+        <h3>씽2게더</h3>
+        애니메이션 | 미국 | 110분<br>
+        2022.01.05 개봉<br>
+        88만명<br>
+    </button>
+
+    <button onclick="window.location.href='review3.html'">
+        <img src="img/미니언즈2.jpeg">
+        <h3>미니언즈2</h3>
+        애니메이션 | 미국 | 87분<br>
+        2022.07.20 개봉<br>
+        상영중...<br>
+    </button>
+
+  </body>
+</html>

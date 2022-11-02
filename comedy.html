@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body
+      {
+        margin: 1% 10% ;
+        border: 0px solid black;
+      }
+	@font-face {
+		font-family: 'Recipekorea';
+		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	a, a:link {
+		color: #000;
+		text-decoration: none;
+		text-decoration-line: none;
+		font-family: 'Recipekorea';
+	}
+	.menubar ul {
+		list-style: none;
+		border-bottom: 1px solid #333;
+		display: flex;
+		justify-content: center;
+	}
+	.menubar li a {
+		display: block;
+		padding: 1.5vw 2vw 1vw;
+		position: relative;
+		font-size: 2.5vw;
+		text-decoration-line: none;
+	}
+	.menubar li a::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+	}
+	.menubar li a::after {
+		width: 0;
+		height: 100%;
+		background: #01143c;
+		left: 50%;
+	}
+	.menubar li a:hover::after {
+		width: 100%;
+		left: 0;
+		transition: all .3s;
+	}
+	.menubar li a:hover{
+  		color: #fff;
+	}
+	img{
+		display: block;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+	}
+
+    div.sidebar ul {
+        list-style-type: none;
+        padding: 10px;
+        margin: 0px;
+        width: 120px;
+        background: #241f1e;
+        height: 100%;
+        overflow: auto;
+        position: fixed;
+    }
+
+    div.sidebar ul li a {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        position: left;
+    }
+
+    div.sidebar ul li a:hover {
+        background: #333;
+        color: #fff;
+    }
+    
+    .right {
+        margin: 1% 10% 0 25%;
+        object-fit: cover;
+    }
+    
+    .right h4{
+        text-align: center;
+    }
+
+    table.type10 {
+        border-collapse: collapse;
+        text-align: center;
+        line-height: 1.5;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin: 20px 10% 0 15%;
+    }
+
+    table.type10 thead th {
+        width: 150px;
+        padding: 10px;
+        font-weight: bold;
+        vertical-align: top;
+        color: #fff;
+        background: #cbb536;
+        margin: 20px 10% 0 25%;
+    }
+
+    table.type10 tbody th {
+        width: 150px;
+        padding: 10px;
+    }
+
+    table.type10 td {
+        width: 350px;
+        padding: 10px;
+        vertical-align: top;
+    }
+
+    table.type10 .even {
+        background: #eeeec9;
+    }
+
+    td a{
+        text-decoration: none;
+        color: #0645ad;
+        background: none;
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+	<div  class = "menubar">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="movie.html">MOVIE</a></li>
+			<li><a href="review.html">REVIEW</a></li>
+			<li><a href="ranking.html">RANKING</a></li>
+		</ul>
+	</div>
+
+
+  <div class="sidebar">
+    <ul  >
+      <li><a href="animztion.html">ANIMATION</a></li><br>
+      <li><a href="comedy.html">COMEDY</a></li><br>
+      <li><a href="romance.html">ROMANCE</a></li><br>
+    </ul>
+  </div>
+
+  <div class="right">
+    <h4>전 세계적으로 많은 수익을 낸 애니메이션 영화 매출 순위 목록</h4>
+
+    <table class="type10">
+        <thead>
+        <tr>
+          <th scope="cols">순위</th>
+          <th scope="cols">작품</th>
+          <th scope="cols">개봉 년도</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1위</th>
+          <td><a href="https://namu.wiki/w/%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%8A%A4%EB%A5%BC%20%EB%B6%80%EB%A5%B4%EB%8A%94%20%EA%B7%B8%20%EC%9D%B4%EB%A6%84%20%EC%A7%81%EC%9E%A5%EC%83%81%EC%82%AC">스트레스를 부르는 그 이름 직장상사</a></td>
+          <td>2011년</td>
+        </tr>
+        <tr>
+          <th scope="row" class="even">2위</th>
+          <td class="even"><a href="https://namu.wiki/w/%EB%A7%88%EC%8A%A4%ED%81%AC(%EC%98%81%ED%99%94)">마스크</a></td>
+          <td class="even">1994년</td>
+        </tr>
+        <tr>
+            <th scope="row">3위</th>
+            <td><a href="https://namu.wiki/w/%ED%9E%88%ED%8A%B8(%EC%98%81%ED%99%94)">히트</a></td>
+            <td>1995년</td>
+        </tr>
+        <tr>
+            <th scope="row" class="even">4위</th>
+            <td class="even"><a href="https://namu.wiki/w/%ED%99%94%EC%9D%B4%ED%8A%B8%20%EC%B9%99%EC%8A%A4">화이트칙스</a></td>
+            <td class="even">2004년</td>
+          </tr>
+          <tr>
+            <th scope="row">5위</th>
+            <td><a href="https://movie.daum.net/moviedb/crew?movieId=4272">핫칙</a></td>
+            <td>2003년</td>
+          </tr>
+          <tr>
+            <th scope="row" class="even">6위</th>
+            <td class="even"><a href="https://namu.wiki/w/%ED%96%89%EC%98%A4%EB%B2%84">행오버</a></td>
+            <td class="even">2009년</td>
+          </tr>
+          <tr>
+            <th scope="row">7위</th>
+            <td><a href="https://namu.wiki/w/%EC%99%84%EB%B2%BD%ED%95%9C%20%EA%B7%B8%EB%85%80%EC%97%90%EA%B2%8C%20%EB%94%B1%20%ED%95%9C%EA%B0%80%EC%A7%80%20%EC%97%86%EB%8A%94%20%EA%B2%83">완벽한 그녀에게 딱 한 가지 없는 것</a></td>
+            <td>2004년</td>
+          </tr>
+          <tr>
+            <th scope="row" class="even">8위</th>
+            <td class="even"><a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A6%AC%ED%82%A4_%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8D%B0%EC%9D%B4_(2003%EB%85%84_%EC%98%81%ED%99%94)">프리키 프라이데이</a></td>
+            <td class="even">2003년</td>
+          </tr>
+          <tr>
+            <th scope="row">9위</th>
+            <td><a href="https://namu.wiki/w/%EB%9F%AD%ED%82%A4(%EC%98%81%ED%99%94)">럭키</a></td>
+            <td>2016년</td>
+          </tr>
+          <tr>
+            <th scope="row" class="even">10위</th>
+            <td class="even"><a href="https://ko.wikipedia.org/wiki/%EC%89%AC%EC%A6%88_%EB%8D%94_%EB%A7%A8">쉬즈더맨</a></td>
+            <td class="even">2006년</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</body>
+
+</html>

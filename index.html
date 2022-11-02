@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body
+      {
+        margin: 1% 10% ;
+        border: 0px solid black;
+      }
+	@font-face {
+		font-family: 'Recipekorea';
+		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	a, a:link {
+		color: #000;
+		text-decoration: none;
+		text-decoration-line: none;
+		font-family: 'Recipekorea';
+	}
+	ul {
+		list-style: none;
+		border-bottom: 1px solid #333;
+		display: flex;
+		justify-content: center;
+	}
+	ul li a {
+		display: block;
+		padding: 1.5vw 2vw 1vw;
+		position: relative;
+		font-size: 2.5vw;
+		text-decoration-line: none;
+	}
+	ul li a::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+	}
+	.menubar li a::after {
+		width: 0;
+		height: 100%;
+		background: #01143c;
+		left: 50%;
+	}
+	ul li a:hover::after {
+		width: 100%;
+		left: 0;
+		transition: all .3s;
+	}
+	.menubar li a:hover{
+  		color: #fff;
+	}
+	img{
+		display: block;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+	}
+	.items{
+		float: left;
+		margin: 5px;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+	.items img{
+		display: block;
+	}
+	.items img:hover{
+		transform: scale(1.4);
+	}
+	.items ul{
+		float: left;
+	}
+	table{
+		border-collapse: collapse;
+		width: 100%;
+        height: 200px;
+		text-align: center;
+	}
+	td, th{
+		border: 1px solid black;
+	}
+
+    </style>
+
+	<script>
+			var index = 0;   //이미지에 접근하는 인덱스
+			window.onload = function(){
+				slideShow();
+			}
+			
+			function slideShow() {
+			var i;
+			var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+			}
+			index++;
+			if (index > x.length) {
+				index = 1;  //인덱스가 초과되면 1로 변경
+			}   
+			x[index-1].style.display = "block";  //해당 인덱스는 block으로
+			setTimeout(slideShow, 4000);   //함수를 4초마다 호출
+		 
+		}
+	</script>
+
+  </head>
+  <body>
+	<div>
+		<nav class = "menubar">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="movie.html">MOVIE</a></li>
+			<li><a href="review.html">REVIEW</a></li>
+			<li><a href="ranking.html">RANKING</a></li>
+		</ul>
+		</nav>
+		<img class="slide1" src="img/1.jpeg">
+		<img class="slide1" src="img/2.jpeg">
+		<img class="slide1" src="img/3.jpeg">
+		<img class="slide1" src="img/4.jpeg">
+		<img class="slide1" src="img/5.jpeg">
+	</div><br><br>
+	<h3>영화</h3>
+	<div class="items">
+		<ul>
+			<li><a href="#"><img src="img/코코.jpeg"><span>코코</span></a></li>
+			<li><a href="#"><img src="img/겨울왕국2.jpeg"><span>겨울왕국2</span></a></li>
+			<li><a href="review3.html"><img src="img/미니언즈2.jpeg"><span>미니언즈2</span></a></li>
+			<li><a href="review1.html"><img src="img/엔칸토.jpeg"><span>엔칸토</span></a></li>
+		</ul>
+	</div>
+	<div class="items">
+		<ul>
+			<li><a href="review2.html"><img src="img/씽2게더.jpeg"><span>씽2게더</span></a></li>
+			<li><a href="#"><img src="img/쿵푸팬더3.jpeg"><span>쿵푸팬더3</span></a></li>
+			<li><a href="#"><img src="img/주토피아.jpeg"><span>주토피아</span></a></li>
+			<li><a href="#"><img src="img/모아나.jpeg"><span>모아나</span></a></li>
+		</ul>
+	</div>
+	<div>
+		<h3>평점</h3>
+		<table>
+			<tr bgcolor="#92E3F1">
+				<th>순위</th>
+				<th>영화 제목</th>
+				<th>평점</th>
+			</tr>
+			<tr>
+				<td>1위</td>
+				<td>씽2게더</td>
+				<td>5점</td>
+			</tr>
+			<tr>
+				<td>2위</td>
+				<td>엔칸토</td>
+				<td>4.8점</td>
+			</tr>
+			<tr>
+				<td>3위</td>
+				<td>미니언즈</td>
+				<td>4점</td>
+			</tr>
+		</table>
+	</div>
+
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body{
+        margin: 1% 10% ;
+        border: 0px solid black;
+    }
+
+	@font-face {
+        font-family: 'Recipekorea';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+	}
+
+	a, a:link {
+		color: #000;
+		text-decoration: none;
+		text-decoration-line: none;
+		font-family: 'Recipekorea';
+	}
+	.menubar ul {
+		list-style: none;
+		border-bottom: 1px solid #333;
+		display: flex;
+		justify-content: center;
+	}
+	.menubar li a {
+		display: block;
+		padding: 1.5vw 2vw 1vw;
+		position: relative;
+		font-size: 2.5vw;
+		text-decoration-line: none;
+	}
+	.menubar li a::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+	}
+	.menubar li a::after {
+		width: 0;
+		height: 100%;
+		background: #01143c;
+		left: 50%;
+	}
+	.menubar li a:hover::after {
+		width: 100%;
+		left: 0;
+		transition: all .3s;
+	}
+	.menubar li a:hover{
+  		color: #fff;
+	}
+	img{
+		display: block;
+		margin: auto;
+		width: 70%;
+		height: 70%;
+	}
+
+    
+    h3{
+        text-align: center;
+        font-family: 'Aboreto', cursive;
+        font-family: 'Single Day', cursive;
+        font-size: 30px;
+    }
+
+    p{
+        color: rgb(76, 136, 173);
+        font-size: 30px;
+        text-shadow: 4px 2px 2px rgb(201, 195, 195);
+        font-weight: bold;
+    }
+
+    </style>
+  </head>
+  <body>
+	<div  class = "menubar">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="movie.html">MOVIE</a></li>
+			<li><a href="review.html">REVIEW</a></li>
+			<li><a href="ranking.html">RANKING</a></li>
+		</ul>
+	</div>
+
+    <div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Single+Day&display=swap" rel="stylesheet">
+        <h3>엔칸토: 마법의 세계</h3>
+        <img src="img/엔칸토.jpeg"><br>
+        <hr>
+
+        <p>1. 줄거리</p>
+        콜롬비아의 깊은 산 속, 놀라운 마법과 활기찬 매력이 넘치는 세계 ‘엔칸토’. 그 곳에는 특별한 능력을 지닌 마드리갈 패밀리가 살고 있다. ‘엔칸토’의 마법 덕분에 초인적 힘, 치유하는 힘 등 저마다 특별한 능력을 가지고 태어난 마드리갈 패밀리. 하지만 ‘미라벨’은 가족 중 유일하게 아무런 능력이 없다. 어느 날, ‘엔칸토’를 둘러싼 마법의 힘이 위험에 처하자 ‘미라벨’은 유일하게 평범한 자신이 특별한 이 가족의 마지막 희망일지 모른다고 생각하는데.. 평범한 ‘미라벨’은 과연 기적을 만들 수 있을까? 전 세대 관객들에게 따뜻한 웃음과 감동을 선사할 마법 같은 영화! 디즈니의 매직이 또 한 번 시작된다
+    </div>
+</body>
+
+</html>

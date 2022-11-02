@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body{
+        margin: 1% 10% ;
+        border: 0px solid black;
+    }
+
+	@font-face {
+        font-family: 'Recipekorea';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+	}
+
+	a, a:link {
+		color: #000;
+		text-decoration: none;
+		text-decoration-line: none;
+		font-family: 'Recipekorea';
+	}
+	.menubar ul {
+		list-style: none;
+		border-bottom: 1px solid #333;
+		display: flex;
+		justify-content: center;
+	}
+	.menubar li a {
+		display: block;
+		padding: 1.5vw 2vw 1vw;
+		position: relative;
+		font-size: 2.5vw;
+		text-decoration-line: none;
+	}
+	.menubar li a::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+	}
+	.menubar li a::after {
+		width: 0;
+		height: 100%;
+		background: #01143c;
+		left: 50%;
+	}
+	.menubar li a:hover::after {
+		width: 100%;
+		left: 0;
+		transition: all .3s;
+	}
+	.menubar li a:hover{
+  		color: #fff;
+	}
+	img{
+		display: block;
+		margin: auto;
+		width: 70%;
+		height: 70%;
+	}
+
+    
+    h3{
+        text-align: center;
+        font-family: 'Aboreto', cursive;
+        font-family: 'Single Day', cursive;
+        font-size: 30px;
+    }
+
+    p{
+        color: rgb(243, 120, 132);
+        font-size: 30px;
+        text-shadow: 4px 2px 2px rgb(201, 195, 195);
+        font-weight: bold;
+    }
+
+    </style>
+
+    <script>
+        (function() {
+        'use strict';
+
+        var vid = document.getElementsByTagName("iframe");
+        for (var i = 0, l = vid.length; i < l; i++) {
+            var vidno = vid[i];
+            var reg = new RegExp(/.*youtube.*autoplay=1.*/i);
+            if (reg.test(vidno.src)){
+                vidno.src=vidno.src.replace("autoplay=1", "autoplay=0");
+            }
+        }
+
+
+        })();
+    </script>
+
+  </head>
+  <body>
+	<div  class = "menubar">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="movie.html">MOVIE</a></li>
+			<li><a href="review.html">REVIEW</a></li>
+			<li><a href="ranking.html">RANKING</a></li>
+		</ul>
+	</div>
+
+    <div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Single+Day&display=swap" rel="stylesheet">
+        <h3>씽2게더</h3>
+        <img src="img/review2.jpeg"><br>
+        <hr>
+
+        <p>1. 줄거리</p>
+        대국민 오디션 이후 각자의 자리에서 꿈을 이루고 있는 버스터 문(매튜 맥커너히)과 크루들에게 레드 쇼어 시티에서 전 세계가 주목하는 사상 최고의 쇼가 펼쳐진다는 소식이 들려오고 버스터 문과 크루들은 도전에 나선다. 그러나 최고의 스테이지에 서기 위한 경쟁은 이전과는 비교도 할 수 없을 만큼 치열하고, 버스터 문은 완벽한 라이브를 위해 종적을 감춘 레전드 뮤지션 클레이(보노)를 캐스팅하겠다는 파격 선언을 하는데!<br>
+        <hr>
+        <p>2. OST</p>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VXCOMtyHrIA?autoplay=1&mute=1 " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+    </div>
+
+    
+</body>
+
+</html>
